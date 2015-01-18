@@ -16,9 +16,15 @@
   -webkit-transition: 1s;
           transition: 1s;
   display: block;
-  width: 100%; }
+  width: 100%;
+  opacity: 0.75; }
   .game:hover {
-    background-position: 50% 70%; }
+    background-position: 50% 70%;
+    -webkit-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+            transform: scale(1.025);
+    z-index: 100;
+    opacity: 1; }
 
 .game .caption {
   position: absolute;
@@ -26,7 +32,7 @@
   height: 64px;
   width: 100%;
   padding: 10px;
-  padding-top: 48px;
+  padding-top: 32px;
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, black));
   /* Chrome,Safari4+ */
@@ -54,7 +60,17 @@ a.game .title {
   color: white; }
 
 .caption .subtitle {
-  color: #555; }
+  color: #777; }
+
+.person {
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+  opacity: 0.8; }
+  .person:hover {
+    -webkit-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+            transform: scale(1.025);
+    opacity: 1; }
 
 .main-logo {
   -webkit-transition: 0.5s;
@@ -81,7 +97,11 @@ body {
   background: black;
   color: #ddd;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 300; }
+
+strong {
+  font-weight: 400; }
 
 p {
   color: #777; }

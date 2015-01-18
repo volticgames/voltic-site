@@ -1,6 +1,7 @@
 @import "variables";
 @import "animations";
 @import "game";
+@import "people";
 @import "logo_header";
 
 body {
@@ -8,6 +9,12 @@ body {
     color: #ddd;
     font-family: $body-fonts;
     font-size: 18px;
+    font-weight: 300;
+}
+
+strong
+{
+    font-weight: 400;
 }
 
 p
