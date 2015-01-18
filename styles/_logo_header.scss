@@ -1,0 +1,23 @@
+.main-logo
+{
+    @extend .margin-top;
+    transition: 0.5s;
+    animation: fadein 2s;
+
+    &:hover
+    {
+        transform: translateY(-10px);
+
+        & + .main-tagline
+        {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.main-tagline
+{
+    font-family: $header-fonts;
+    animation: fadein 3s;
+    transition: 0.75s;
+}

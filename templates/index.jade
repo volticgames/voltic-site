@@ -1,0 +1,40 @@
+extends _layout
+
+block header
+  include _logo_header
+
+block content
+  span.center
+    h1 Our Games
+
+  include _game
+
+  .row
+    .col-xs-12.padding-col
+      +game(
+        "Proof",
+        "a dark, emotional, puzzling journey",
+        "http://blogs.psychcentral.com/life-goals/files/2014/09/cute-dog-pup-1024x640.jpg",
+        "http://google.com",
+        true,
+        true,
+        true,
+        true)
+
+  span.center
+    h1 Us
+    p
+      | Voltic is an indepenedent game "studio", made up of three dudes from Brisbane, Australia. We've been making games in some capacity for more than 10 years, and haven't stopped yet.
+
+    .row
+      .col-md-4
+        | Ben
+      .col-md-4
+        | Ricky
+      .col-md-4
+        | Jake
+
+  span.center
+    h1 You
+    p
+      | Yeah, you're alright.

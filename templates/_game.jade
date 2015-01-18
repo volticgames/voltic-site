@@ -1,0 +1,15 @@
+mixin game(name, tagline, background, link, wip, mobile, free, unfinished)
+  a.game(data-bg=background, href=link)
+    .labels
+      if wip
+        span.label.label-success Work in Progress
+      if mobile
+        span.label.label-info Mobile Game
+      if free
+        span.label.label-warning Free!
+      if unfinished
+        span.label.label-danger Unfinished :(
+    .caption
+      span.text
+        span.title=name
+        small.subtitle=tagline

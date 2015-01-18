@@ -1,0 +1,39 @@
+@import "variables";
+@import "animations";
+@import "game";
+@import "logo_header";
+
+body {
+    background: black;
+    color: #ddd;
+    font-family: $body-fonts;
+    font-size: 18px;
+}
+
+p
+{
+    color: #777;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: $header-fonts;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.margin-top
+{
+    margin-top: 20px;
+}
+
+.padding-col
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
